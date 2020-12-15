@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+@{
+    Html.BeginForm("index", "home", FormMethod.Get);
+    <input type="text" title="search term" value="@ViewBag.search_term" name="search_term" />
+    <input class="btn btn-success" type="submit" value="search" />
+}
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+</script>
+<h2>Welcome to my book store</h2>
+<p>There are various types of books available in this store.</p>
+<h2>Some of the lists of the books available in this store are:</h2>
+<table border="1px" solid black>
+    <tr>
+        <th>sociology</th>
+        <th>general knowledge</th>
+        <th>biology</th>
+        <th>physics</th>
+    </tr>
+    <tr>
+        <td>social lifes</td>
+        <td>extra skills and news</td>
+        <td>biological life</td>
+        <td>force and derivations</td>
+</table>
+<body>
+    <h2>Sociology</h2>
+    <p1>Sociology is the study of social life, social change, and the social causes and consequences of human behavior. Sociologists investigate the structure of groups, organizations, and societies, and how people interact within these contexts. Sociology is a social science concerned with the study of society and human behaviour and relationships. </p1>
+    <img src="~/images/sociology.jpg" />
+    <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Add to cart &raquo;</a></p>
+    <h2>General knowledge</h2>
+    <p2>General knowledge is information that has been accumulated over time through various mediums. It excludes specialized learning that can only be obtained with extensive training and information confined to a single medium. Knowledge is a familiarity, awareness, or understanding of someone or something, such as facts (propositional knowledge), skills (procedural knowledge), or objects (acquaintance knowledge). </p2>
+    <img src="~/images/gk.jpg" />
+    <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Add to cart &raquo;</a></p>
+    <h2>Biology</h2>
+    <p2>Biology is the natural science that studies life and living organisms, including their physical structure, chemical processes, molecular interactions, physiological mechanisms, development and evolution. Biology is the study of life. The word "biology" is derived from the Greek words "bios" (meaning life) and "logos" (meaning "study"). In general, biologists study the structure, function, growth, origin, evolution and distribution of living organisms.</p2>
+    <img src="~/images/biology.jpg" />
+    <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Add to cart &raquo;</a></p>
+    <h2>Physics</h2>
+    <p4>Physics is the natural science that studies matter, its motion and behavior through space and time, and the related entities of energy and force. Physics is one of the most fundamental scientific disciplines, and its main goal is to understand how the universe behaves. Courses in physics reveal the mathematical beauty of the universe at scales ranging from subatomic to cosmological. Studying physics strengthens quantitative reasoning and problem solving skills that are valuable in areas beyond physics.</p4>
+    <img src="~/images/physics.jpg" />
+    <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Add to cart &raquo;</a></p>
+</body>

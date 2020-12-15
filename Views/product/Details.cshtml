@@ -1,0 +1,58 @@
+﻿@model Bishwas_book_store.product_table
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>product_table</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.product_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_details)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category_table.cat_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category_table.cat_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.product_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
